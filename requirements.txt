@@ -1,0 +1,4 @@
+opencv-python
+pymodbus
+zbar
+numpy

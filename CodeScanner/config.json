@@ -1,0 +1,14 @@
+{
+    "resolution": {
+        "width": 1280,
+        "height": 720
+    },
+    "camera_settings": {
+        "brightness": 0.5,
+        "contrast": 0.5,
+        "saturation": 0.5,
+        "gain": 0.5,
+        "exposure": -2,
+        "fps": 30
+    }
+}
