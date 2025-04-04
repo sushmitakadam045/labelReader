@@ -1,4 +1,4 @@
 opencv-python
 pymodbus
-zbar
+pyzbar
 numpy

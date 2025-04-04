@@ -12,4 +12,3 @@ def decodeBarOrQRCode(imgPath):
     except Exception as e:
         print("Error opening or processing the file {}. Error {} ".format(imgPath, e))
         return []
-#print(decodeBarOrQRCode("C:\\Users\\sk6813\\Downloads\\QRCode.png"))

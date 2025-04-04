@@ -21,16 +21,17 @@ def applySettings(cap):
     camSet.load_config()
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, camSet.width)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, camSet.height)
-    cap.set(cv2.CAP_PROP_BRIGHTNESS, camSet.brightness)
     cap.set(cv2.CAP_PROP_CONTRAST, camSet.contrast)
     cap.set(cv2.CAP_PROP_SATURATION, camSet.saturation)
+    cap.set(cv2.CAP_PROP_BRIGHTNESS, camSet.brightness)
     cap.set(cv2.CAP_PROP_GAIN, camSet.gain)
     cap.set(cv2.CAP_PROP_EXPOSURE, camSet.exposure)
     cap.set(cv2.CAP_PROP_FPS, camSet.fps)
 
+
 def captureImage():
     cap = cv2.VideoCapture(0)
-    applySettings(cap)
+    #applySettings(cap)
 
     if not cap.isOpened():
         raise IOError("Could not open camera!")
@@ -39,7 +40,10 @@ def captureImage():
 
     if not ret:
         raise IOError("Could not read frame.")
+
     cv2.imwrite("Capture1.jpg", frame)
     print("Captured Image successfully!")
     cap.release()
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 

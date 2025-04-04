@@ -20,7 +20,7 @@ class CameraSettingsCls:
 
     def load_config(self):
         if not os.path.exists(self.configFile):
-            print("Config file does not exit. Using default configurations.")
+            print("Config file does not exist. Using default configurations.")
             config = self.defaultConfig
         else:
             try:
@@ -48,5 +48,5 @@ class CameraSettingsCls:
             self.contrast = camera_settings.get("contrast", 0.5)
             self.saturation = camera_settings.get("saturation", 0.5)
             self.gain = camera_settings.get("gain", 0.5)
-            self.exposure = camera_settings.get("exposure", -4)
+            self.exposure = camera_settings.get("exposure", -0)
             self.fps = camera_settings.get("fps", 30)

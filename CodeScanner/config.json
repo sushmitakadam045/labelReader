@@ -10,5 +10,9 @@
         "gain": 0.5,
         "exposure": -2,
         "fps": 30
+    },
+    "codeCount": {
+        "QR": 2,
+        "bar": 3
     }
 }
