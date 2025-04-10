@@ -41,9 +41,7 @@ def captureImage():
     if not ret:
         raise IOError("Could not read frame.")
 
-    cv2.imwrite("Capture1.jpg", frame)
-    print("Captured Image successfully!")
     cap.release()
     cv2.waitKey(0)
     cv2.destroyAllWindows()
-
+    return  frame

@@ -2,3 +2,5 @@ opencv-python
 pymodbus
 pyzbar
 numpy
+tensorflow
+tensorflow-object-detection-api

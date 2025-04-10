@@ -6,9 +6,9 @@
     "camera_settings": {
         "brightness": 0.5,
         "contrast": 0.5,
-        "saturation": 0.5,
+        "saturation": 0.8,
         "gain": 0.5,
-        "exposure": -2,
+        "exposure": 1,
         "fps": 30
     },
     "codeCount": {

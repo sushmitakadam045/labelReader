@@ -2,16 +2,16 @@ import json
 import os
 
 class CameraSettingsCls:
-    def __init__(self, configFile = ".\\CodeScanner\\config.json"):
+    def __init__(self, configFile = "C:\\Users\\sk6813\\PycharmProjects\\LabelReader\\CodeScanner\\config.json"):
         #TODO: make a note of all the config settings you make
         self.defaultConfig = {
             "resolution": {"width": 1280, "height": 720},
             "camera_settings": {
                 "brightness": 0.7,
                 "contrast": 0.7,
-                "saturation": 0.6,
+                "saturation": 0.8,
                 "gain": 0.7,
-                "exposure": 0,
+                "exposure": 1,
                 "fps": 30
             }
         }
@@ -46,7 +46,7 @@ class CameraSettingsCls:
 
             self.brightness = camera_settings.get("brightness", 0.5)
             self.contrast = camera_settings.get("contrast", 0.5)
-            self.saturation = camera_settings.get("saturation", 0.5)
+            self.saturation = camera_settings.get("saturation", 0.7)
             self.gain = camera_settings.get("gain", 0.5)
-            self.exposure = camera_settings.get("exposure", -0)
+            self.exposure = camera_settings.get("exposure", 1)
             self.fps = camera_settings.get("fps", 30)
